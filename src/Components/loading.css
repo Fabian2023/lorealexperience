@@ -1,0 +1,84 @@
+
+@font-face {
+    font-family: 'FuturaPTMedium.otf'; /* Nombre de la fuente */
+    src: url('../fonts/FuturaPTMedium.otf') format('opentype'); /* Ruta de la fuente */
+  } 
+
+/* Loading.css */
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.loading-circle {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 10px solid #E42A16;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #E42A16;
+    font-size: 10em;
+    font-weight: bold;
+    font-family: 'FuturaPTMedium.otf', sans-serif;
+}
+
+.title {
+    margin-bottom: 20px; /* Espacio entre el título y el contador */
+    font-family: 'FuturaPTMedium.otf', sans-serif;
+    color:black;
+    font-size: 5em;
+  }
+
+  .full-screen-imageLoading {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Esto asegurará que la imagen cubra todo el contenedor sin distorsionarse */
+  }
+
+  .title-loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Ajusta según sea necesario */
+    text-align: center;
+    margin-top: -500px;
+  }
+
+  @media (min-width: 2160px) and (min-height: 3840px) {
+   
+    .title-loading {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white; /* Ajusta según sea necesario */
+        text-align: center;
+        margin-top: -750px;
+      }
+      .title {
+        margin-bottom: 60px; /* Espacio entre el título y el contador */
+        font-family: 'FuturaPTMedium.otf', sans-serif;
+        color:black;
+        font-size: 12em;
+      }
+      .loading-circle {
+        width: 550px;
+        height: 550px;
+        border-radius: 50%;
+        border: 40px solid #E42A16;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #E42A16;
+        font-size: 25em;
+        font-weight: bold;
+        font-family: 'FuturaPTMedium.otf', sans-serif;
+    }
+
+  }
