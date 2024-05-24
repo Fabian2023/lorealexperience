@@ -9,14 +9,7 @@ const Landing = () => {
     navigate("/loading");
   };
 
-  // const divStyle = {
-
-  //   // backgroundImage: `url(${inicio })`,
-  //   backgroundSize: 'cover',
-  //   backgroundPosition: '  center',
-  //   display: 'block'
-
-  // };
+  
 
   return (
     <div className="page-container">

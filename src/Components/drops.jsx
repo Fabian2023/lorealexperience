@@ -54,22 +54,20 @@ const Drops = ({ score, setScore }) => {
         <p style={{ marginLeft: "650px" }}>PUNTAJE: {score} pts</p>
       </div>
       {showDrops && (
-        <div className="gotas">
-          {clicked.map((isClicked, index) => (
-            <div
-              key={index}
-              className="gota"
-              style={{
-                backgroundImage: `url(${isClicked ? numero10Img : gotaImg})`,
-                ...(isClicked
-                  ? { width: "5vw", height: "5vw" }
-                  : { width: "12vw", height: "16vw" }),
-              }}
-              onClick={() => handleClick(index)}
-            ></div>
-          ))}
-        </div>
-      )}
+  <div className="gotas">
+    {clicked.map((isClicked, index) => (
+      <div
+        key={index}
+        className="gota"
+        style={{
+          backgroundImage: `url(${isClicked ? numero10Img : gotaImg})`,
+          ...(isClicked && { width: "5vw", height: "5vw" }), // Solo aplica el tamaño si isClicked es verdadero
+        }}
+        onClick={() => handleClick(index)}
+      ></div>
+    ))}
+  </div>
+)}
       {showResultsScore && <ResultsScore score={score} />}
     </div>
   );

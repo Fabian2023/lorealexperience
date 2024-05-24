@@ -50,6 +50,41 @@
     margin-top: -500px;
   }
 
+  @media (min-width: 1080px) and (min-height: 1920px) {
+
+    .title-loading {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: white; /* Ajusta según sea necesario */
+      text-align: center;
+      margin-top: -320px;
+    }
+    .title {
+      margin-bottom: 60px; /* Espacio entre el título y el contador */
+      font-family: 'FuturaPTMedium.otf', sans-serif;
+      color:black;
+      font-size: 5em;
+    }
+    .loading-circle {
+      width: 270px;
+      height: 270px;
+      border-radius: 50%;
+      border: 20px solid #E42A16;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #E42A16;
+      font-size: 15em;
+      font-weight: bold;
+      font-family: 'FuturaPTMedium.otf', sans-serif;
+  }
+    
+
+
+  }
+
   @media (min-width: 2160px) and (min-height: 3840px) {
    
     .title-loading {
@@ -59,7 +94,7 @@
         justify-content: center;
         color: white; /* Ajusta según sea necesario */
         text-align: center;
-        margin-top: -750px;
+        margin-top: -800px;
       }
       .title {
         margin-bottom: 60px; /* Espacio entre el título y el contador */
@@ -82,3 +117,4 @@
     }
 
   }
+  

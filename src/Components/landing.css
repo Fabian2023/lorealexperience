@@ -42,13 +42,29 @@
     font-family: 'FuturaPTBook', sans-serif;
     width: 270px;
   }
+
+  @media (min-width: 1080px) and (min-height: 1920px) {
+    button {
+      font-size: 3rem; /* Aumenta el tamaño de fuente */
+      padding: 1rem 1rem; /* Ajusta el padding */
+      margin-top: -2250px;
+      margin-left: 600px;
+      width: 290px;
+      height: 100px;
+    }
+
+
+  }
+
   @media (min-width: 2160px) and (min-height: 3840px) {
     button {
-      font-size: 4rem; /* Aumenta el tamaño de fuente */
-      padding: 2rem 3rem; /* Ajusta el padding */
+      font-size: 5rem; /* Aumenta el tamaño de fuente */
+      padding: 2rem 1rem; /* Ajusta el padding */
       margin-top: -4500px;
       margin-left: 1100px;
-      width: 370px;
+      width: 440px;
+      height: 150px;
+      border-radius: 50px
     }
     .full-screen-image {
       width: 100%;
@@ -58,5 +74,9 @@
 
 
   }
+
+  
+
+  
 
   
