@@ -50,8 +50,8 @@ const Drops = ({ score, setScore }) => {
     <div>
       <img src={juego} alt="inicio" className="full-screen-imageDrops" />
       <div className="subtitle">
-        <p style={{ marginRight: "30px" }}>TIEMPO: {timeLeft} seg </p>
-        <p style={{ marginLeft: "650px" }}>PUNTAJE: {score} pts</p>
+        <p >TIEMPO: {timeLeft} seg </p> 
+        <p >PUNTAJE: {score} pts</p>
       </div>
       {showDrops && (
   <div className="gotas">

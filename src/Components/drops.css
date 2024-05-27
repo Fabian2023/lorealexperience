@@ -25,7 +25,7 @@ html {
   background-position: center;
   opacity: 0.8;                       
   position: absolute;
-  top: 1100px;
+  top: 500px;
   animation: gotas 3s linear infinite;
   cursor: pointer;
   background-color: transparent;
@@ -91,11 +91,18 @@ html {
 .subtitle {
   display: flex;
   flex-direction: row;
-  justify-content: center; /* Alinea los elementos al principio */
+  justify-content: center; 
   align-items: center;
-  margin-top: -1880px;
+  margin-top: -1520px;
   font-family: "FuturaPTMedium.otf";
   font-size: 40px;
+  margin-left: 9%;
+  gap: 510px;
+  
+}
+.subtitle p {
+  margin-right: 160px 
+    
 }
 
 @media (min-width: 1080px) and (min-height: 1920px) {
