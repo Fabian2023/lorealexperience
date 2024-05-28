@@ -4,6 +4,16 @@ html {
   padding: 0;
   height: 100%;
   width: 100%;
+  overflow: hidden
+}
+
+.droptext{
+  margin-top: 780px;
+  font-family: "FuturaPTMedium.otf";
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @font-face {
@@ -15,6 +25,7 @@ html {
   width: 100%;
   height: 100%;
   object-fit: cover; /* Esto asegurará que la imagen cubra todo el contenedor sin distorsionarse */
+  
 }
 /*empieza diseño de efecto burbuja*/
 
@@ -25,7 +36,7 @@ html {
   background-position: center;
   opacity: 0.8;                       
   position: absolute;
-  top: 500px;
+  top: 400px;/*aqui se  bajan las burbujas desde la parte superior*/
   animation: gotas 3s linear infinite;
   cursor: pointer;
   background-color: transparent;
@@ -34,7 +45,7 @@ html {
 .gota:nth-child(1) {
   width: 13vw;
   height: 10vh;
-  left: 12%;
+  left: 8%;
   animation-duration: 2s;
   animation-delay: 1s;
 }
@@ -42,24 +53,17 @@ html {
 .gota:nth-child(2) {
   width: 13vw;
   height: 10vh;
-  left: 80%;
-  animation-duration: 3s;
+  left: 75%;
+  animation-duration: 2s;
   animation-delay: 2s;
 }
 
-.gota:nth-child(3) {
-  width: 13vw;
-  height: 10vh;
 
-  left: 28%;
-  animation-duration: 3s;
-  animation-delay: 4s;
-}
 
 .gota:nth-child(4) {
   width: 13vw;
   height: 10vh;
-  left: 62%;
+  left: 30%;
   animation-duration: 2s;
   animation-delay: 4s;
 }
@@ -67,8 +71,8 @@ html {
 .gota:nth-child(5) {
   width: 13vw;
   height: 10vh;
-  left: 45%;
-  animation-duration: 3s;
+  left: 53%;
+  animation-duration: 2.5s;
   animation-delay: 6s;
 }
 
@@ -84,7 +88,7 @@ html {
     opacity: 5.8;
   }
   100% {
-    top: calc(100vh - 950px);
+    top: 60vh;  /* aqui cambia la altura*/
     opacity: 0;
   }
 }
@@ -93,11 +97,13 @@ html {
   flex-direction: row;
   justify-content: center; 
   align-items: center;
-  margin-top: -1520px;
+  margin-top: -1015px; /*aqui se sube o se bajan los subtitulos*/
   font-family: "FuturaPTMedium.otf";
-  font-size: 40px;
-  margin-left: 9%;
-  gap: 510px;
+  font-size: 28px;
+  margin-right: -22%; /*  Mover margen para ir cuadrando*/
+  gap:12%;
+  
+ 
   
 }
 .subtitle p {
@@ -174,7 +180,7 @@ html {
       opacity: 5.8;
     }
     100% {
-      top: calc(80vh);
+      top: calc(60vh);
       opacity: 0;
     }
   }

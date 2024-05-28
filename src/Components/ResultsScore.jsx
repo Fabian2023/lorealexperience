@@ -10,8 +10,9 @@ const ResultsScore = ({ score }) => {
   useEffect(() => {
     // Redirige a la página de inicio después de 6 segundos
     const timer = setTimeout(() => {
-      navigate('/');
-    }, 8000);
+      navigate("/");
+      window.location.reload();
+    }, 7000);
 
     // Limpia el temporizador si el componente se desmonta antes de que se cumplan los 6 segundos
     return () => clearTimeout(timer);
@@ -26,7 +27,12 @@ const ResultsScore = ({ score }) => {
         alt="inicio"
         className="full-screen-imageFinal"
       />
-      <h1>PUNTAJE: {score} pts</h1>
+      <div className="time">
+    <h1>TIEMPO: 30 seg</h1>
+  </div>
+  <div className="score">
+    <h1>PUNTAJE: {score} pts</h1>
+  </div>
     </div>
   );
 };

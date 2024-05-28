@@ -31,6 +31,9 @@ const Loading = ({ onTimeout }) => {
         <h1 className="title">! PREPÁRATE !</h1>
         <div className="loading-circle">{counter}</div>
       </div>
+      <div className="timesload">
+        <h2>TIEMPO: 30 seg</h2>
+      </div>
     </div>
   );
 };

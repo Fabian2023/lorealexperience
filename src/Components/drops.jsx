@@ -10,7 +10,7 @@ const Drops = ({ score, setScore }) => {
   const [clicked, setClicked] = useState([false, false, false, false, false]);
   const [showDrops, setShowDrops] = useState(true);
   const [showResultsScore, setShowResultsScore] = useState(false);
-  const [timeLeft, setTimeLeft] = useState(60); // Estado para el tiempo restante
+  const [timeLeft, setTimeLeft] = useState(30); // Estado para el tiempo restante
 
   const handleClick = (index) => {
     if (!clicked[index]) {
@@ -69,6 +69,7 @@ const Drops = ({ score, setScore }) => {
   </div>
 )}
       {showResultsScore && <ResultsScore score={score} />}
+      <p className="droptext">LA SALUD ES VITAL EMPIEZA POR TU PIEL</p>
     </div>
   );
 };
