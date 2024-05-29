@@ -56,16 +56,16 @@ const Drops = ({ score, setScore }) => {
       {showDrops && (
   <div className="gotas">
     {clicked.map((isClicked, index) => (
-      <div
-        key={index}
-        className="gota"
-        style={{
-          backgroundImage: `url(${isClicked ? numero10Img : gotaImg})`,
-          ...(isClicked && { width: "5vw", height: "5vw" }), // Solo aplica el tamaño si isClicked es verdadero
-        }}
-        onClick={() => handleClick(index)}
-      ></div>
-    ))}
+  <div
+    key={index}
+    className={`gota ${isClicked ? "numero10Img" : ""}`}
+    style={{
+      backgroundImage: `url(${isClicked ? numero10Img : gotaImg})`,
+      ...(isClicked && { width: "5vw", height: "5vw" }), // Solo aplica el tamaño si isClicked es verdadero
+    }}
+    onClick={() => handleClick(index)}
+  ></div>
+))}
   </div>
 )}
       {showResultsScore && <ResultsScore score={score} />}

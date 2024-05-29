@@ -28,6 +28,10 @@ html {
   
 }
 /*empieza diseño de efecto burbuja*/
+::selection {
+  background: transparent;
+}
+
 
 
 
@@ -40,7 +44,28 @@ html {
   animation: gotas 3s linear infinite;
   cursor: pointer;
   background-color: transparent;
+  user-select: none; /* Evita la selección de texto */
+  outline: none; /* Elimina el borde de enfoque predeterminado */
+  
+
 }
+
+.gota:focus, .gota:active {
+  outline: none; /* Asegura que el borde de enfoque esté desactivado */
+  background-color: transparent; /* Asegura que no haya cambio de color de fondo */
+}
+
+.numero10Img {
+  user-select: none; /* Evita la selección de la imagen */
+  outline: none; /* Elimina el borde de enfoque */
+}
+
+.numero10Img:focus, .numero10Img:active {
+  outline: none; /* Asegura que el borde de enfoque esté desactivado */
+  background-color: transparent; /* Asegura que no haya cambio de color de fondo */
+}
+
+
 
 .gota:nth-child(1) {
   width: 13vw;
